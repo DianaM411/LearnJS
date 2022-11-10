@@ -8,9 +8,12 @@
   </head>
   <body>
     <h2>DAW2</h2>
+    <p id="demo"></p>
     <script>
       alert("Ejercicio CP3_4");
-      prompt("Nombre: ");
+      let nombre = prompt("Nombre: ");
+      let letras = nombre.length;
+      document.getElementById("demo").innerHTML =`El nombre ${nombre} contiene: ${letras} letra(s).`;
     </script>
   </body>
 </html>

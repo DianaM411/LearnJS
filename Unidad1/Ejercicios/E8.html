@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8</title>
+</head>
+<body>
+    <h2>DAW2</h2>
+    <p id="demo"></p>
+    <script>
+      alert("Ejercicio CP3_8");
+      let numero = 1;
+      let contador = 0;
+      let suma = 0;
+
+      while (numero != 0) {
+      numero = parseInt(prompt(`Numero (0 para terminar): `));
+      suma += numero;
+      contador++;
+      }
+      
+      let media = suma/contador;
+      document.getElementById("demo").innerHTML =`Media: ${media}.`;
+    </script>
+</body>
+</html>

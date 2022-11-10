@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+</head>
+<body>
+    <h2>DAW2</h2>
+    <p id="apellido">Apellido: </p>
+    <p id="nombre">Nombre: </p>
+    <p id="inicial">Inicial del apellido: </p>
+    <p id="caracter">Caracter Unicode de la inicial del nombre: </p>
+    <p id="completo">Apellido & Nombre: </p>
+    <p id="primeraE">La primera "e" del nombre esta en la posicion: </p>
+    <p id="ultimaE">La ultima "e" del nombre esta en la posicion: </p>
+    <script>
+      alert("Ejercicio CP3_10");
+      let apellido = "Charles";
+      let nombre = "Leclerc";
+      let inicial = apellido.charAt(0);
+      let caracter = nombre.charCodeAt(0);
+      let primeraE = nombre.indexOf("e")+1;
+      let ultimaE = nombre.lastIndexOf("e")+1;
+        
+      document.getElementById("apellido").innerHTML +=`${apellido}.`;
+      document.getElementById("nombre").innerHTML +=`${nombre}.`;
+      document.getElementById("inicial").innerHTML +=`${inicial}.`;
+      document.getElementById("caracter").innerHTML +=`${caracter}.`;
+      document.getElementById("completo").innerHTML +=`${apellido} ${nombre}.`;
+      document.getElementById("primeraE").innerHTML +=`${primeraE}.`;
+      document.getElementById("ultimaE").innerHTML +=`${ultimaE}.`;
+    </script>
+</body>
+</html>
