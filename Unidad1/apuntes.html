@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apuntes UNIDAD 1</title>
+  </head>
+  <body>
+    <script>
+      //++++++ MOSTRAR INFO ++++++
+      alert("Hola");
+      confirm("Hola");
+      prompt("Hola");
+      console.log("Hola");
+
+      //++++++ STRING ++++++
+      let miCadena = "Una cadena";
+
+      for (valor of miCadena) {
+        console.log(valor);
+      }
+
+      //++++++ BUCLES ++++++
+      let edad = 28;
+
+      console.log(`El usuario tiene: ${edad} anos.`);
+      if (edad < 18) {
+        console.log("Es menor de edad");
+      } else if (edad > 18) {
+        console.log("Es mayor de edad");
+      }
+      // ?: es como un if que devuelve true or false
+      let esMayorDeEdad = edad > 18 ? true : false;
+      //switch puede evaluar condiciones (boolean)
+
+      const objectName = {
+        property1: 1,
+        property2: "text",
+        property3: false,
+      };
+
+      let arrayName = [4, 8, 16, 32];
+
+      //for IN to iterate over OBJECTS
+      for (let variable in object) {
+        //this prints all the properties(keys)
+        console.log(variable);
+        //this prints all the values
+        console.log(object[variable]);
+      }
+
+      //for OF to iterate over an ARRAY
+      for (let elemento of array) {
+        console.log(elemento);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio3</title>
+  </head>
+  <body>
+    <h1>DAW2</h1>
+    <p id="radioText">Radio de la esfera:</p>
+    <p id="superficieText">Superficie:</p>
+    <p id="volumenText">Volumen:</p>
+    <script>
+      alert("Ejercicio CP3_3");
+      const radioEsfera = 1.24;
+      const superficie = 2 * Math.PI * radioEsfera;
+      const volumen = (4 / 3) * Math.PI * Math.pow(radioEsfera, 3);
+      document.getElementById("radioText").innerHTML += radioEsfera;
+      document.getElementById("superficieText").innerHTML += superficie;
+      document.getElementById("volumenText").innerHTML += volumen;
+    </script>
+  </body>
+</html>
